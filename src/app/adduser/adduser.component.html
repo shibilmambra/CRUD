@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand  " href="#" style="color:rgb(161, 37, 37);"><a style="color:(161, 37, 37) ;"> InIT Solutions
+            Pvt.Ltd </a></a>
+    <span class="quote text-light">Bringing Idea to Life</span>
+</nav>
+
+
+<div class="container w-50 mt-5 p-3">
+    <h3 class="text-center">Create User</h3>
+    <form (ngSubmit)="adduser()" action="">
+
+
+        <div class="p-2">
+            <input name="username" [(ngModel)]="userform.UserName" class="form-control" type="text"
+                placeholder="User name">
+        </div>
+        <div class="p-2">
+            <input name="password" [(ngModel)]="userform.Password" class="form-control" type="text"
+                placeholder="Password">
+        </div>
+      
+        <label for="admin"><input [(ngModel)]="userform.UserType" type="radio" name="Id" value="1"  >Admin 
+            <label for="user"> <input [(ngModel)]="!userform.UserType" type="radio" name="Id" value="2">User</label><br>
+        </label> <br>
+         
+        <div class="p-2 text-center">
+            <button type="submit" class="btn btn-outline-dark">Create </button>
+        </div>
+    </form>
+</div>

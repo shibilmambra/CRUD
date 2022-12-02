@@ -1,0 +1,37 @@
+<nav class="navbar navbar-light bg-dark " >
+  <a class="navbar-brand  " href="#" style="color:rgb(161, 37, 37);"><a style="color:(161, 37, 37) ;"> InIT Solutions Pvt.Ltd </a></a>
+  <span class="quote text-light">Bringing Idea to Life</span>
+</nav>
+
+<button style="margin-left: 1280px;" class="btn btn-warning" (click)="logout()">Logout</button>
+
+<h1 style="text-align:center">Welcome {{currentuser}}..!</h1> <br><br>
+<button (click)="add()" class="text-center">Add New User</button>
+
+
+<table class="table table-warning w-50 mx-auto">
+    
+ 
+  <thead>
+       <tr>
+          <td>Username </td>
+          <td>Password</td>
+          <td>User Type</td>
+        </tr>
+  </thead>
+
+   <tbody>
+        <tr *ngFor="let i of userlist">
+          <td >{{i.UserName}} </td>
+          <td>{{i.Password}}</td>
+          <td *ngIf="i.UserType==1">Admin</td>
+          <td *ngIf="i.UserType==2">User</td>
+
+          <button  type="button" (click)="editbutton(i)" style="background-color: rgb(137, 194, 137);">Edit</button>
+           <button type="button" (click)="delete(i.Id)"  style="background-color: rgb(194, 88, 88);">Delete</button>
+</tr>           
+   </tbody>
+  </table>
+
+
+

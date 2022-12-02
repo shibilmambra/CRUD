@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand  " href="#" style="color:rgb(161, 37, 37);"><a style="color:(161, 37, 37) ;"> InIT Solutions
+            Pvt.Ltd </a></a>
+    <span class="quote text-light">Bringing Idea to Life</span>
+</nav>
+
+
+<div class="container w-50 mt-5 p-3">
+    <h3 class="text-center">Update User</h3>
+    <form (ngSubmit)="EditForm(editfor.Id)" action="">
+
+
+        <div class="p-2">
+            <input name="username" [(ngModel)]="editfor.UserName" class="form-control" type="text"
+                placeholder="User name">
+        </div>
+        <div class="p-2">
+            <input name="password" [(ngModel)]="editfor.Password" class="form-control" type="text"
+                placeholder="Password">
+        </div>
+      
+        <label for="admin"><input [(ngModel)]="editfor.UserType" type="radio" name="Id" value="1"  >Admin 
+            <label for="user"> <input [(ngModel)]="!editfor.UserType" type="radio" name="Id" value="2">User</label><br>
+        </label> <br>
+
+
+        <!-- <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              User
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Admin
+            </label>
+          </div> -->
+         
+        <div class="p-2 text-center">
+            <button type="submit" class="btn btn-outline-dark">Update </button>
+        </div>
+    </form>
+</div>

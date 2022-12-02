@@ -1,0 +1,37 @@
+{
+  "user": [
+    {
+      "username": "shibil",
+      "password": "123",
+      "usertype": "user"
+    },
+    {
+      "username": "anu",
+      "password": "123",
+      "usertype": "admin"
+    },
+    {
+      "username": "tressa",
+      "password": "123",
+      "usertype": "user"
+    },
+    {
+      "username": "manu",
+      "password": "123",
+      "usertype": "admin",
+      "id": "uixWFLZ"
+    },
+    {
+      "username": "siraj",
+      "password": "123",
+      "usertype": "admin",
+      "id": "lfi4CO3"
+    },
+    {
+      "username": "qwerty",
+      "password": "qwert",
+      "usertype": "qwert",
+      "id": "jnglGmi"
+    }
+  ]
+}
